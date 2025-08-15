@@ -32,7 +32,7 @@ export default function AddItem() {
       return;
     }
 
-    const response = await fetch("http://localhost:5000/api/AddFoodItem", {
+    const response = await fetch("https://go-food-backend-k7r3.onrender.com/api/AddFoodItem", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
