@@ -26,7 +26,7 @@ export default function Home() {
         setRole(roleData.role || "");
       }
 
-      const foodDataResponse = await fetch("http://localhost:5000/api/foodData", {
+      const foodDataResponse = await fetch("https://go-food-backend-k7r3.onrender.com/api/foodData", {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });
