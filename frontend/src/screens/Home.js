@@ -20,7 +20,7 @@ export default function Home() {
       const userEmail = localStorage.getItem("userEmail");
       if (userEmail) {
         const roleResponse = await fetch(
-          `http://localhost:5000/api/userRole?email=${encodeURIComponent(userEmail)}`
+          `https://go-food-backend-k7r3.onrender.com/api/userRole?email=${encodeURIComponent(userEmail)}`
         );
         const roleData = await roleResponse.json();
         setRole(roleData.role || "");
